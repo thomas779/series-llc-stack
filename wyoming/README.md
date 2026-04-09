@@ -2,7 +2,7 @@
 
 Entity created via [Otoco](https://otoco.io). Non-resident / foreign-resident friendly.
 
-**Tested profiles:** US Wyoming Series LLC with residency from Paraguay, Cayman Islands, and Palau
+**Tested profiles:** US Wyoming Series LLC with residency/KYC from Paraguay, Cayman Islands, and Palau
 
 ## Fund Flow
 
@@ -22,8 +22,8 @@ Entity created via [Otoco](https://otoco.io). Non-resident / foreign-resident fr
 | Provider | Type | Notes |
 |---|---|---|
 | Mercury | Business Banking | Main business account. USD wire/ACH + USDC on/off-ramp |
-| Kraken Business | Crypto Exchange | — |
-| OKX Business | Crypto Exchange | — |
+| Kraken Business | Crypto Exchange | [Zero-fee stablecoin conversions](https://support.kraken.com/articles/free-stablecoin-conversions) |
+| OKX Business | Crypto Exchange | [Zero-fee stablecoin converstions & US treasury yield](https://www.okx.com/en-eu/learn/usdg) |
 
 ### 🔄 In Progress
 
