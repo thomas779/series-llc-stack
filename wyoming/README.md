@@ -21,12 +21,9 @@ Entity created via [Otoco](https://otoco.io). Non-resident / foreign-resident fr
 
 | Provider | Type | Notes |
 |---|---|---|
-| Novo | Business Banking | Main business account. USD wire/ACH + USDC on/off-ramp |
+| Mercury | Business Banking | Main business account. USD wire/ACH + USDC on/off-ramp |
 | Kraken Business | Crypto Exchange | — |
-| Kraken Personal | Crypto Exchange | — |
 | OKX Business | Crypto Exchange | — |
-| OKX Personal | Crypto Exchange | — |
-| Charles Schwab | Brokerage | — |
 
 ### 🔄 In Progress
 
@@ -38,7 +35,7 @@ Entity created via [Otoco](https://otoco.io). Non-resident / foreign-resident fr
 
 | Provider | Type | Reason |
 |---|---|---|
-| Altitude | Business Banking | Not disclosed (via Bridge) |
+| Altitude | Business Banking | Not disclosed |
 | Paxos | Stablecoin / Payments | High risk |
 | Brex | Business Banking | VC-backed entity required |
 | Coinbase | Crypto Exchange | State filing required |
