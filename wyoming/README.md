@@ -22,14 +22,15 @@ Entity created via [Otoco](https://otoco.io). Non-resident / foreign-resident fr
 | Provider | Type | Notes |
 |---|---|---|
 | Mercury | Business Banking | Main business account. USD wire/ACH + USDC on/off-ramp |
-| Kraken Business | Crypto Exchange | [Zero-fee stablecoin conversions](https://support.kraken.com/articles/free-stablecoin-conversions) |
-| OKX Business | Crypto Exchange | [Zero-fee stablecoin converstions & US treasury yield](https://www.okx.com/en-eu/learn/usdg) |
+| Meow | Business Banking | Zero-fee USDC on/off-ramp |
+| Kraken Business | Brokerage | [Zero-fee conversions for USDC and USDG](https://support.kraken.com/articles/free-stablecoin-conversions) |
+| OKX Business | Brokerage | [Zero-fee USDG converstions, custodial US treasury yield access](https://www.okx.com/en-eu/learn/usdg) |
 
 ### 🔄 In Progress
 
 | Provider | Type | Notes |
 |---|---|---|
-| Meow | Business Banking | — |
+| Native Markets | Brokerage, Stablecoin | [Non-custodial yield access via USDH](https://usdh.com/) |
 
 ### ❌ Rejected
 
