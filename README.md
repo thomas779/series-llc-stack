@@ -1,20 +1,30 @@
 # 🗺️ Series LLC Stack
 
-> A community-maintained map for navigating compliant, low-cost business entity setup across jurisdictions, with a focus on stablecoin (USDC/USDG) treasury management, banking, and free on/off-ramp flows.
+> Community-maintained map for compliant, low-cost US entity setup with stablecoin treasury management and on/off-ramp flows.
 
-## What This Is
+This repo documents real-world KYB/KYC experiences across US entity types and residency profiles. The goal: help founders, nomads, and operators understand which providers actually accept you, how funds move, and what the full stack looks like — without expensive consultants or opaque advice.
 
-This repo documents real-world experiences setting up Series LLCs across U.S. jurisdictions, going through KYB/KYC with banking and crypto providers, and building a legal, privacy-respecting financial stack - all while operating as a non-resident or foreign-resident entity.
+## How to Navigate
 
-The goal is to help founders, nomads, and operators understand **which providers actually accept you**, **how funds move**, and **what the structure looks like end-to-end** — without expensive consultants or opaque advice.
+There are two independent axes. Find yours and combine them.
 
-## Why Series LLC + Stablecoins?
+**1. Your entity** → what the *business* can access (KYB)
 
-- **Series LLC** (Wyoming, Delaware, etc.) = low-cost, modular entity structure. Each "series" is a separate legal silo.
-- **Stablecoins (USDC/USDG)** = programmable, borderless settlement. Avoid slow/expensive wire infrastructure.
-- **On/Off-Ramps** = bridges between fiat banking and on-chain treasury.
+| Entity | Status | Notes |
+|---|---|---|
+| [US LLC](./entities/us/) | ✅ Active | Wyoming + Delaware. KYB providers, ACH access. |
+| → [Wyoming](./entities/us/wyoming/) | ✅ Active | Series LLC via Otoco. High privacy. |
+| → Delaware | 🔜 Planned | — |
 
-The combination allows a lean operator to run a compliant business with very low overhead, high privacy, and flexible cross-border payments.
+**2. Your residency** → what *you personally* can access (KYC)
+
+| Residency | Status |
+|---|---|
+| [Global](./residency/global.md) | ✅ Services that work from anywhere |
+| [Paraguay](./residency/paraguay.md) | ✅ Cedula-based, local exchanges, EU workarounds |
+| Cayman Islands | 🔜 Planned |
+
+The fund flow diagram in each entity folder shows how the two layers connect — business distributions flow into your personal accounts.
 
 ## Estimated Annual Costs (Ongoing)
 
@@ -25,47 +35,53 @@ The combination allows a lean operator to run a compliant business with very low
 | Accounting / yearly forms | ~$10 |
 | **Total** | **~$230/yr** |
 
-> Note: Initial costs (residency permits, travel, setup) vary and are excluded. See individual entity docs for details.
+> Initial costs (residency permits, travel, setup) vary and are excluded.
 
-## Jurisdictions Covered
+## Stablecoin Orchestrators
 
-| Jurisdiction | Status | Notes |
+Most crypto fintech on/off-ramp infrastructure runs on one of three rails:
+
+| Orchestrator | Status | Notes |
 |---|---|---|
-| [Wyoming](./wyoming/) | ✅ Active | Series LLC via Otoco. Non-resident friendly. |
-| Delaware | 🔜 Planned | — |
+| [bridge.xyz](https://bridge.xyz) | ⚠️ Use with caution | Shadow ban risk — accounts closed without explanation |
+| [iron.xyz](https://iron.xyz) (now MoonPay) | ✅ Recommended | Best product; virtual cards, CLI terminal, build-your-own-bank API |
+| [noah.com](https://noah.com) | 🔄 Evaluating | — |
+
+## Privacy Stack
+
+| Tool | Use Case |
+|---|---|
+| [privacypools.com](https://privacypools.com) | Compliant ETH mixer — seed your company wallet from a clean, verifiable source |
+| [fluidkey](https://fluidkey.com) | Ephemeral keys — receive and rotate funds without triggering compliance flags |
 
 ## Repository Structure
 
 ```
 series-llc-stack/
-├── README.md          ← You are here
-└── wyoming/
-    ├── README.md      ← Entity overview, providers, fund flow
-    └── image.png      ← Fund flow diagram
+├── README.md                  ← You are here
+├── entities/
+│   └── us/
+│       ├── README.md          ← KYB providers for any US LLC
+│       └── wyoming/
+│           ├── README.md      ← Wyoming-specific: formation, fund flow
+│           └── image.png      ← Fund flow diagram
+└── residency/
+    ├── global.md              ← Personal services that work from anywhere
+    └── paraguay.md            ← PY-specific: Cedula, local exchanges, EU workarounds
 ```
-
-Each jurisdiction gets its own folder following the same pattern. Add `delaware/`, `cayman/`, etc. as they're documented.
 
 ## Contributing
 
-This is a living document. If you've gone through KYB/KYC with a provider not listed here, or have a different jurisdiction experience, PRs are welcome.
-
-Please follow the format in existing provider files and include:
+PRs welcome. When adding a provider, include:
 - Entity type and jurisdiction
 - Residency of applicant
-- Outcome (accepted / rejected)
+- Outcome (accepted / not compatible)
 - Any notable requirements or gotchas
 
-## Need Help With Your Specific Situation?
+## Need Help?
 
-This repo covers the general framework. If your situation involves:
-- Non-standard residency (Cayman Islands, Paraguay, UAE, etc.)
-- Specific on/off-ramp structuring
-- Multi-entity / multi-series coordination
-- Introductions to affordable compliance accountants
-
-...feel free to open an issue describing your situation. Community members with relevant experience may be able to point you in the right direction.
+If your situation involves non-standard residency, specific on/off-ramp structuring, multi-entity coordination, or introductions to affordable compliance accountants — open an issue. Community members with relevant experience may be able to point you in the right direction.
 
 ## Disclaimer
 
-This repository is for **informational and educational purposes only**. Nothing here constitutes legal, tax, or financial advice. Always consult a qualified professional for your specific situation. Regulations vary by jurisdiction and change frequently.
+For informational and educational purposes only. Nothing here constitutes legal, tax, or financial advice. Regulations vary by jurisdiction and change frequently.
